@@ -1,0 +1,11 @@
+# Fichiers temporaires
+*.log
+*.tmp
+
+# Dossiers de dépendances
+node_modules/
+.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
