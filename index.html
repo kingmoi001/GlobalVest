@@ -170,11 +170,35 @@
 <section id="inscription" style="background:#ffffff; padding:40px; text-align:center;">
   <h2>Inscrivez-vous</h2>
   <p>Rejoignez GlobalVest et commencez à investir dès aujourd’hui.</p>
-  <form action="https://formspree.io/f/yourformid" method="POST" style="max-width:500px; margin:auto;">
-    <input type="text" name="nom" placeholder="Votre nom" required style="width:100%; padding:10px; margin:10px 0;">
-    <input type="email" name="email" placeholder="Votre email" required style="width:100%; padding:10px; margin:10px 0;">
-    <button type="submit" style="padding:12px 24px; background-color:#2c3e50; color:white; border:none; border-radius:6px;">S’inscrire</button>
+  <section id="contact">
+  <h2>Inscription GlobalVest</h2>
+  <p>Remplissez le formulaire ci-dessous pour rejoindre notre réseau d'investisseurs.</p>
+
+  <form action="https://formspree.io/f/xvgqlryy" method="POST">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="pays">Pays :</label>
+    <input type="text" id="pays" name="pays" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="type">Type d’investisseur :</label>
+    <select id="type" name="type" required>
+      <option value="">-- Sélectionnez --</option>
+      <option value="particulier">Particulier</option>
+      <option value="entreprise">Entreprise</option>
+      <option value="institutionnel">Institutionnel</option>
+    </select>
+
+    <label for="message">Message :</label>
+    <textarea id="message" name="message" rows="4" placeholder="Décrivez vos objectifs ou questions..."></textarea>
+
+    <button type="submit" class="btn">Envoyer</button>
   </form>
+</section>
+
 </section>
 
   <footer>
