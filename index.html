@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <script src="https://www.google.com/recaptcha/api.js?render=6LcIBKQrAAAAAMGxg5ft_WoNXH189R_UVKLst0t1"></script>
   <meta charset="UTF-8">
   <title>GlobalVest</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -173,7 +174,7 @@
   <section id="contact">
   <h2>Inscription GlobalVest</h2>
   <p>Remplissez le formulaire ci-dessous pour rejoindre notre réseau d'investisseurs.</p>
-
+<input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
   <form action="https://formspree.io/f/xvgqlryy" method="POST">
     <label for="nom">Nom :</label>
     <input type="text" id="nom" name="nom" required>
@@ -194,8 +195,16 @@
 
     <button type="submit" class="btn">Envoyer</button>
   </form>
+  <script>
+  grecaptcha.ready(function () {
+    grecaptcha.execute('6LcIBKQrAAAAAMGxg5ft_WoNXH189R_UVKLst0t1', {action: 'submit'}).then(function (token) {
+      document.getElementById('g-recaptcha-response').value = token;
+    });
+  });
+</script>
+  
 </section>
-
+  
 </section>
 
   <footer>
